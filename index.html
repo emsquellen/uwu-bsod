@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <title>BSOD</title>
+
+
+  <style>
+    body {
+      font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+      background: #3973aa;
+
+      color: #fefeff;
+      height: 100vh;
+      margin: 0;
+      cursor: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=), none;
+      user-select: none;
+    }
+
+    #page {
+      display: table;
+      height: 100%;
+      margin: 0 auto;
+      margin-top: -10px;
+      width: 70%;
+      font-size: 1.9vw;
+    }
+
+    #container {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-weight: normal;
+      padding: 0;
+      margin: 25px 0;
+      margin-top: 0;
+      font-weight: 300;
+    }
+
+    h1 {
+      font-size: 6.5em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    h4 {
+      font-size: 1.4em;
+      line-height: 1.5em;
+    }
+
+    h5 {
+      line-height: 1.1em;
+      font-size: 1.3em;
+    }
+
+    #details {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: nowrap;
+      padding-top: 10px;
+    }
+
+    #qr {
+      flex: 0 1 auto;
+    }
+
+    #image {
+      background: white;
+      padding: 5px;
+      line-height: 0;
+    }
+
+    #image img {
+      width: 9.8em;
+      height: 9.8em;
+    }
+
+    #stopcode {
+      padding-left: 10px;
+      flex: 1 1 auto;
+    }
+
+    @media (min-width: 840px) {
+      #page {
+        font-size: 140%;
+        width: 800px;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+
+    var percentageElement = document.getElementById("percentage");
+    var percentage = 0;
+
+    function process() {
+      percentage += parseInt(Math.random() * 10);
+      if (percentage > 100) {
+        percentage = 100;
+      }
+      percentageElement.innerText = percentage;
+      processInterval();
+    }
+
+    function processInterval() {
+      setTimeout(process, Math.random() * (1000 - 500) + 500)
+    }
+    processInterval();
+  </script>
+</head>
+
+<div id="page">
+  <div id="container">
+    <h1>(✖﹏✖)</h1>
+    <h2>OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! </h2>
+    <h2>
+      <span id="percentage">0</span>% complete
+    </h2>
+    <div id="details">
+      <div id="qr">
+        <div id="image">
+          <img alt=""
+            src="data:image/png;base64,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" />
+        </div>
+      </div>
+      <div id="stopcode">
+        <h4>The code monkeys at our headquarters
+          <br /> are working VEWY HAWD to fix this!
+        </h4>
+        <h5>sowwy :(</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
