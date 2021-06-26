@@ -104,31 +104,12 @@
       }
     }
   </style>
-  <script type="text/javascript">
-
-    var percentageElement = document.getElementById("percentage");
-    var percentage = 0;
-
-    function process() {
-      percentage += parseInt(Math.random() * 10);
-      if (percentage > 100) {
-        percentage = 100;
-      }
-      percentageElement.innerText = percentage;
-      processInterval();
-    }
-
-    function processInterval() {
-      setTimeout(process, Math.random() * (1000 - 500) + 500)
-    }
-    processInterval();
-  </script>
 </head>
 
 <div id="page">
   <div id="container">
-    <h1>(✖﹏✖)</h1>
-    <h2>OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! </h2>
+    <h1 id='smiley'>(✖﹏✖)</h1>
+    <h2>OOPSIE WOOPSIE!! <strong>UwU</strong> We made a fucky wucky!! A wittle fucko boingo! </h2>
     <h2>
       <span id="percentage">0</span>% complete
     </h2>
